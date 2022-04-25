@@ -1,0 +1,215 @@
+@charset "UTF-8";
+/*Обнуление стилей*/
+* {
+  padding: 0;
+  margin: 0;
+  border: 0;
+}
+
+*, *:before, *:after {
+  box-sizing: border-box;
+}
+
+:focus, :active {
+  outline: none;
+}
+
+a:focus, a:active {
+  outline: none;
+}
+
+nav, footer, header, aside {
+  display: block;
+}
+
+html, body {
+  width: 100%;
+  height: 100%;
+  font-size: 100%;
+  line-height: 1;
+  font-size: 14px;
+  -ms-text-size-adjust: 100%;
+  -moz-text-size-adjust: 100%;
+  -webkit-text-size-adjust: 100%; 
+}
+
+input, button, textarea {
+  font-family: inherit;
+}
+
+input::-ms-clear {
+  display: none;
+}
+
+button {
+  cursor: pointer;
+}
+
+button::-moz-focus-inner {
+  padding: 0;
+  border: 0;
+}
+
+a, a:visited {
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: none;
+}
+
+ul li {
+  list-style: none;
+}
+
+img {
+  vertical-align: top;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-size: inherit;
+  font-weight: 400;
+}
+
+/*==============================================================*/
+/*==============================================================*/
+body {
+
+  margin: 0 auto;
+  text-align: center;
+}
+
+.wrapper {
+  width: 100%;
+  height: 100%;
+  display: table;
+}
+
+.main {
+  display: table-cell;
+  vertical-align: middle;
+  text-align: center;
+}
+
+.quiz-frame {
+  max-width: 1600px;
+  width: 100%;
+  height: 100%;
+  margin: 0 auto;
+}
+
+.quiz__head {
+  font-size: 20pt;
+  margin: 10px;
+  margin-bottom: 50px;
+}
+
+.head__content {
+  padding: 5px;
+}
+
+.quiz__body {
+  margin: 10px;
+}
+
+.quiz__footer {
+  position: absolute;
+  bottom: 0;
+  display: block;
+  width: 100%;
+}
+
+.footer__content {
+  padding: 5px;
+}
+
+.button {
+
+  border-radius: 5px;
+  background: #6477EB;
+  color: #fff;
+  padding: 10px 25px;
+  max-width: 60%;
+  font-size: 15pt;
+  display: block;
+  margin: 2px auto;
+  cursor: pointer;
+}
+
+.button_wrong {
+  background: #EB6465;
+}
+
+.button_correct {
+  background: #5EB97D;
+}
+
+.button_passive {
+  background: #B3B3B3;
+}
+
+/*==============================================================*/
+.main__up{
+  padding: 30px;
+  font-size: 28px;
+  background-color: #557F8B;
+
+}
+.main__down{
+  padding: 25px;
+  background-color: #7F949A;
+  font-size: 20px;
+  width: 100%;
+  margin: 0 auto;
+
+}
+
+/*==============================================================*/
+.main__main{
+  width: 100%;
+  height: 100%; 
+  margin: 0 auto;  
+  display: flex;
+  margin-bottom: 30px;
+  background: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)), url('../img/fone.jpg'); 
+  background-size: cover;
+}
+.nav{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-items: center;
+  margin: 0 auto;
+}
+.nav__list {
+  color: #000;
+  flex: 0 0 30%;
+  text-decoration: none;
+  opacity: 0.60;
+  margin-left: 30px;
+  transition: opacity 0.3s ease 0s;
+  font-size: 35px;
+  padding: 30px;
+}
+.nav__list__1{
+  background-color: #CAF6B9;
+  margin-top: -200px;
+}
+.nav__list__2{
+  background-color: #F6E4B9;
+ margin-top: -200px;
+}
+.nav__list__3{
+  background-color: #F6B9B9;
+  margin-top: -800px;
+}
+.nav__list__4{
+  background-color: #B9EDF6;
+  margin-top: -800px;
+}
+/*.nav__list:first-child {
+  margin-left: 0;
+}*/
+.nav__list:hover {
+  opacity: 1;
+}
